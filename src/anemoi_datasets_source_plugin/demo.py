@@ -5,7 +5,14 @@
 # granted to it by virtue of its status as an intergovernmental organisation
 # nor does it submit to any jurisdiction.
 
+from earthkit.data.indexing.fieldlist import FieldArray
+
 
 def demo_source(context, dates, **kargs):
-    print("This is a demo function.", dates)
-    print("This is a demo function.", kargs)
+
+    fields = []
+
+    # for date in dates:
+    #     fields.append(...)
+
+    return FieldArray(fields)
