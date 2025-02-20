@@ -14,8 +14,6 @@ from anemoi.transform.fields import new_fieldlist_from_list
 
 LOG = logging.getLogger(__name__)
 
-KEEP_FILES = {}
-
 
 # if running in a notebook, we need to register the filter
 # @filter_registry.register("custom_filter")
@@ -26,6 +24,11 @@ class CustomFilter(Filter):
         self.a = a
 
     def forward(self, data):
+        print("✅✅ CustomFilter forward")
+        print("  Received data: ")
+        for field in data:
+            print('  ', field)
+
         result = []
         for field in data:
 

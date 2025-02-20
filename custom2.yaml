@@ -23,5 +23,5 @@ input:
           stream: oper
           type: an
 
-    - custom-filter:
-        a: 2t
+    - custom-filter-2:
+        a: 10
